@@ -1,2 +1,1 @@
-# presentation
-Presentation about WebPlatform SVG
+https://ivanpekh.github.io/presentation/

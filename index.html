@@ -1,0 +1,157 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/beige.css" id="theme"> <!-- >solarized*/ -->
+		<link rel="stylesheet" href="css/style.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section> <!-- Slide Start-->
+					<h2>Scalable Vector Graphics</h2>
+					<h1>SVG</h1>
+					<span style="font-size: 0.5em;">Created by Yliya Pekhota</span>
+				</section>
+				
+				<section> <!-- Slide ONE-->
+					<p>
+						<img class="img-slide-one" src="examples/assets/image-1slide.jpg">
+						<strong>SVG</strong> is an Extensible Markup Language (XML)-based vector image format for two-dimensional graphics with support for interactivity and animation. The SVG specification is an open standard developed by the World Wide Web Consortium (W3C) since 1999.
+					</p>
+				</section>
+
+				<section> <!-- Slide TWO-->
+					<h3>Why use SVG at all?</h3>
+					<img class="img-slide-two" src="examples/assets/benefits1.png">
+					<img class="fragment fade-up img-slide-two" src="examples/assets/benefits2.png">
+					<img class="fragment fade-up img-slide-two" src="examples/assets/benefits3.png">
+					<img class="fragment fade-up img-slide-two" src="examples/assets/benefits4.png">
+				</section>
+
+				<section> <!-- Slide THREE-->
+					<h3>Drawing Shapes with SVG</h3>
+					<p>We can draw some basic shapes like the <strong>rectangle</strong>, <strong>circle</strong>, <strong>line</strong>, <strong>ellipse</strong>, <strong>polyline</strong> and <strong>polygon</strong></p>
+					<img class="img-slide-three" src="examples/assets/image-3slide.jpg">
+					 <p>all those graphic elements need to be inserted within the svg tag.</p>
+					 <pre><code><svg> ... </svg></code></pre>
+				</section>
+
+				<section data-transition="concave"> <!-- Slide FOUR-->
+					<h3>Line</h3>
+					<pre style="width:99%"><code data-trim data-line-numbers>
+						<svg>
+							<line x1="0" y1="0" x2="200" y2="200" stroke-width="1" stroke="rgb(0,0,0)"/>
+						</svg>
+					</code></pre>
+					<div class="bckg">
+						<svg>
+							<line x1="0" y1="0" x2="200" y2="200" stroke-width="1" stroke="rgb(0,0,0)"/>
+						</svg>
+					</div>
+				</section>
+
+				<section data-transition="convex"> <!-- Slide FIVE-->
+					<h3>Rectangle</h3>
+					<pre style="width:99%"><code data-trim data-line-numbers>
+						<svg>
+							<rect width="150" height="150" fill="#7dae3b"/>
+						</svg>
+					</code></pre>
+					<div class="bckg">
+						<svg>
+							<rect width="150" height="150" fill="#7dae3b"/>
+						</svg>
+					</div>
+				</section>
+
+				<section data-transition="concave"> <!-- Slide SIX-->
+					<h3>Circle</h3>
+					<pre style="width:99%"><code data-trim data-line-numbers>
+						<svg>
+							<circle cx="70" cy="70" r="60" fill="#fc890a" />
+						</svg>
+					</code></pre>
+					<div class="bckg">
+						<svg>
+							<circle cx="70" cy="70" r="60" fill="#fc890a" />
+						</svg>
+					</div>
+				</section>
+
+				<section> <!-- Slide SEVEN-->
+					<h3>Ways to use SVG</h3>
+					<ul>
+						<li><p>Using SVG as an &lt;img&gt;</p></li>
+					</ul>
+					<pre><code data-trim>
+						<img src="image.svg" alt="Description of image"/>
+					</code></pre>
+					<ul>
+						<li><p>Using SVG as a background-image</p></li>
+					</ul>	
+					<pre><code data-trim>
+							<a href="/" class="logo"> Logo </a>
+					</code></pre>
+					<pre><code data-trim data-line-numbers>
+							.logo {
+								display: block;
+								text-indent: -9999px;
+								width: 100px;
+								height: 82px;
+								background: url(image.svg);
+								background-size: 100px 82px;
+							  }
+					</code></pre>
+				</section>
+
+				<section> <!-- Slide EIGHT-->
+					<ul>
+						<li><p>Using inline SVG code.</p></li>
+					</ul>
+					<pre><code data-trim data-line-numbers> 
+						&lt;body&gt;
+
+							<!-- paste in SVG code, image shows up!  -->
+
+						&lt;/body&gt;</code></pre>
+					<p style="font-size:0.8em">
+						Where SVGs differ is that the code inside the file can be copied and pasted directly on a page to display the image. This method allows for more control over manipulating the image.
+					</p>	
+				</section>
+
+				<section data-transition="zoom"> <!-- Slide nine-->
+					<p>As you can see, SVG is a beneficial tool for displaying vector-based images on your website. </p>
+					<br />
+					<p>Thanks for attention</p>
+				</section>
+
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>

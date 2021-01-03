@@ -1,0 +1,25 @@
+img.img-slide-one {
+    width: 650px;
+    height: 360px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+img.img-slide-two {
+    width: 450px;
+    height: 74px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+img.img-slide-three {
+    width: 424px;
+    height: 232px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto; 
+}
+.bckg {
+    padding: 30px;
+    background: #edebeb;
+}
