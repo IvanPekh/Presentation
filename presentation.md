@@ -1,2 +1,2 @@
 1. a link to your YouTube video;
-2. a link to your Reveal presentation's deploy;
+2. https://ivanpekh.github.io/presentation/
